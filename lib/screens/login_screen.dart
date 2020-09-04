@@ -31,9 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 onChanged: (value) {
 //                  value do something
                 },
-                decoration: De,
               ),
-
             ],
           ),
         ),
