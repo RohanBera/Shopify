@@ -13,6 +13,9 @@ const kLoginTextFieldDecoration = InputDecoration(
     borderSide: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
     borderRadius: BorderRadius.all(Radius.circular(30.0)),
   ),
+  hintStyle: TextStyle(
+    color: Colors.black38,
+  ),
 );
 
 const kRegistrationTextFieldDecoration = InputDecoration(
@@ -27,5 +30,8 @@ const kRegistrationTextFieldDecoration = InputDecoration(
   focusedBorder: OutlineInputBorder(
     borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
     borderRadius: BorderRadius.all(Radius.circular(30.0)),
+  ),
+  hintStyle: TextStyle(
+    color: Colors.black38,
   ),
 );

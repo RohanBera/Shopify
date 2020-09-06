@@ -23,19 +23,22 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Hero(
                   tag: 'logo',
                   child: Container(
                     child: Image.asset('images/logo.png'),
-                    height: 60,
+                    height: 80,
                   ),
                 ),
                 TypewriterAnimatedTextKit(
                   text: ['Shopify'],
                   textStyle: TextStyle(
+                    fontFamily: 'KumbhSans',
                     fontSize: 50.0,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w100,
+                    color: Colors.black,
                   ),
                   speed: Duration(milliseconds: 500),
                   isRepeatingAnimation: false,

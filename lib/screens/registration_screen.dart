@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/components/rounded_button.dart';
 import 'package:shopify/constants.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -19,11 +20,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Hero(
-              tag: 'icon',
+              tag: 'logo',
               child: Container(
                 child: Image.asset('images/logo.png'),
                 height: 200.0,
               ),
+            ),
+            SizedBox(
+              height: 10.0,
             ),
             TextField(
               keyboardType: TextInputType.emailAddress,
@@ -42,6 +46,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               decoration: kRegistrationTextFieldDecoration.copyWith(
                   hintText: 'Password...'),
               onChanged: (value) {},
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            RoundedButton(
+              color: Colors.blueAccent,
+              title: 'Register',
+              onPressed: () {},
             ),
           ],
         ),

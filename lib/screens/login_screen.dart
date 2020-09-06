@@ -26,6 +26,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 200.0,
               ),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
             TextField(
               textAlign: TextAlign.center,
               keyboardType: TextInputType.emailAddress,
